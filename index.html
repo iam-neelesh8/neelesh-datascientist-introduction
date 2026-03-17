@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Neelesh Reddypelli, a Data Scientist specializing in GCP, BigQuery, Python, LLM, and RAG.">
+    <title>Neelesh Reddypelli | Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Placeholder for FontAwesome, using CDN in real app or SVGs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-gradient"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">NR.</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="name">Neelesh Reddypelli</h1>
+                <h2 class="title">Data Scientist & AI Engineer</h2>
+                <p class="bio" style="font-size: 1.15rem; line-height: 1.8; color: var(--text-color);">
+                    Data Scientist at GPC | Master’s in Applied Data Science | GenAI | Python | Machine Learning | Deep
+                    Learning | LLM | RAG | Agentic AI | Langchain | ADK | Vector DB | GCP | PySpark | Big Data | SQL |
+                    MLOps | AWS | R
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <img src="profile.jpeg" alt="Neelesh Reddypelli" class="profile-img" id="profile-pic">
+                    <div class="glowing-orb"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a Data Scientist with over 6+ years of experience in building scalable AI and data solutions.
+                    Currently working at <strong>Genuine Parts Company</strong>, I leverage cutting-edge technologies
+                    like
+                    <strong>GCP, BigQuery, Python, and LLMs</strong> to drive significant business value.
+                </p>
+                <p>
+                    My expertise lies in developing <strong>RAG systems, Multi-Agent architectures, and NLP
+                        applications</strong>
+                    that automate complex processes and generate millions in revenue and cost savings.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+
+                <!-- Job 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <div class="job-header">
+                            <h3>Data Scientist</h3>
+                            <span class="company">Genuine Parts Company</span>
+                            <span class="date">July 2023 – Present</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span>GCP</span><span>BigQuery</span><span>Python</span><span>LLM</span><span>RAG</span><span>Multi
+                                Agent</span>
+                        </div>
+                        <ul class="job-details">
+                            <li>Designed a multi-variable, multi-class product taxonomy system (Texnomy) classifying 2M+
+                                products into NAPA Retail Hierarchy (NRH) using a reverse-RAG mechanism with PPH, PCC,
+                                MPCC and domain-expert intent via Gemini-2.5-Flash, driving significant incremental
+                                sales.</li>
+                            <li>Architected an AI-driven auto parts interchange discovery pipeline using LLM-based
+                                semantic matching, external data cleaning, and hybrid RAG + ML validation; successfully
+                                identified 10M new interchanges from external sources, delivering measurable revenue
+                                impact.</li>
+                            <li>Architected a mechanism to detect and correct incorrect NAPA catalog titles using LLMs
+                                and semantic matching on attribute data (online display names, PCC, MPCC) with
+                                Gemini-2.5-Flash and GTE-multilingual embeddings, boosting catalog quality and sales
+                                performance.</li>
+                            <li>Led an attribute consistency cleanup for 2M+ catalog products using hierarchical
+                                clustering and GPT 4.1 mini, reducing returns and driving significant annual savings.
+                            </li>
+                            <li>Built Chat-GPC, a unified AI chatbot platform (wrapper across Gemini/GPT models) with
+                                enterprise-grade guardrails preventing leakage of sensitive company data and controlling
+                                model usage; deployed on GCP with FastAPI, serving 3,500+ active users and driving
+                                significant cost savings as part of the company’s AI-first transformation initiative.
+                            </li>
+                            <li>Built a Text-to-SQL analytics agent converting natural language to BigQuery SQL using a
+                                multi-agent framework, RAG with vector database, and function calling; introduced
+                                reasoning-based query decomposition for complex analytics; enabling 200+ supply chain
+                                staff to self-serve reporting insights, driving significant annual savings and improving
+                                decision-making.</li>
+                            <li>Architected an SEC filings analytics chatbot using RAG with Milvus VDB and GPT, cutting
+                                analysis time by 4 hours/user/day, delivering significant savings and 30% higher report
+                                quality.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <div class="job-header">
+                            <h3>Data Scientist</h3>
+                            <span class="company">Navient</span>
+                            <span class="date">May 2022 – July 2023</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Hadoop</span><span>PySpark</span><span>Python</span><span>Machine
+                                Learning</span><span>Azure</span>
+                        </div>
+                        <ul class="job-details">
+                            <li>Predicted high propensity to pay customers from default borrowers, aiming to increase
+                                liquidation rate from 0.3% to 1.5% of the $16B portfolio.</li>
+                            <li>Developed a solution to identify call reasons from audio transcriptions, reducing call
+                                volume by 40% and saving <strong>$400K per month</strong>.</li>
+                            <li>Designed and deployed a chatbot using NLP with 97% faster query time and 24% increase in
+                                accuracy.</li>
+                            <li>Worked on image classification and NLP to automate handwritten application forms, saving
+                                thousands of work hours.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <div class="job-header">
+                            <h3>Data Scientist</h3>
+                            <span class="company">ValueMomentum</span>
+                            <span class="date">June 2019 - June 2021</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Hadoop</span><span>Impala</span><span>Python</span><span>Sklearn</span><span>XGBoost</span>
+                        </div>
+                        <ul class="job-details">
+                            <li>Designed a fraud detection system using Random Forest, achieving a 40% reduction in
+                                fraudulent claims and driving <strong>$6M in annual cost savings</strong>.</li>
+                            <li>Conducted A/B testing to benchmark ML-driven fraud detection models, decreasing false
+                                positives.</li>
+                            <li>Developed ML-driven demographic segmentation for marketing using clustering and
+                                predictive modeling, resulting in a <strong>20% sales increase</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <div class="job-header">
+                            <h3>Data Analyst</h3>
+                            <span class="company">Prahem Technologies</span>
+                            <span class="date">June 2018 – May 2019</span>
+                        </div>
+                        <div class="tech-stack">
+                            <span>Python</span><span>Tableau</span><span>MySQL</span><span>Geospatial Analysis</span>
+                        </div>
+                        <ul class="job-details">
+                            <li>Collaborated with teams to track campaign performance, contributing to a 10% increase in
+                                monthly active users.</li>
+                            <li>Utilized geospatial analysis to identify bottlenecks, improving delivery reliability and
+                                reducing operational costs by 8%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category card">
+                    <h3><i class="fas fa-brain"></i> AI & NLP</h3>
+                    <div class="tags">
+                        <span>LLMs (GPT, Gemini)</span>
+                        <span>RAG</span>
+                        <span>LangChain</span>
+                        <span>LangGraph</span>
+                        <span>Hugging Face</span>
+                        <span>Transformers</span>
+                        <span>Fine-tuning</span>
+                        <span>Prompt Engineering</span>
+                        <span>Milvus/Pinecone</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3><i class="fas fa-chart-line"></i> Machine Learning</h3>
+                    <div class="tags">
+                        <span>Random Forest</span>
+                        <span>XGBoost</span>
+                        <span>Clustering (K-Means)</span>
+                        <span>Deep Learning (CNN, RNN)</span>
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>Scikit-learn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3><i class="fas fa-database"></i> Big Data & Databases</h3>
+                    <div class="tags">
+                        <span>GCP BigQuery</span>
+                        <span>Hadoop</span>
+                        <span>Spark/PySpark</span>
+                        <span>Kafka</span>
+                        <span>MySQL</span>
+                        <span>SQL Server</span>
+                        <span>Neo4j</span>
+                    </div>
+                </div>
+
+                <div class="skill-category card">
+                    <h3><i class="fas fa-code"></i> Languages & Tools</h3>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Pandas/NumPy</span>
+                        <span>HTML/CSS/JS</span>
+                        <span>FastAPI</span>
+                        <span>Tableau</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content card">
+                <p>Interested in collaborating or have a question? Feel free to reach out.</p>
+                <div class="contact-links">
+                    <a href="mailto:neeleshkumarreddypelli@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>neeleshkumarreddypelli@gmail.com</span>
+                    </a>
+                    <a href="tel:+13179692177" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1-317-969-2177</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Neelesh Reddypelli. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>

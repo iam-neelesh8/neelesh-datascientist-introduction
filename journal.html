@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daily Journal of Neelesh Reddypelli.">
+    <title>Journal | Neelesh Reddypelli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=2">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-gradient"></div>
+    
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">NR.</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="journal.html">Journal</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container journal-header">
+        <h1 class="name" style="font-size: 3rem;">Daily Journal</h1>
+        <p class="bio" style="margin: 0 auto;">Thoughts, learnings, and daily updates.</p>
+    </div>
+
+    <section class="section pt-0" style="padding-top: 0;">
+        <div class="container" style="max-width: 800px;">
+            <!-- Feed Section -->
+            <div id="journal-feed" class="journal-feed">
+                <div class="card journal-entry">
+                    <div class="journal-entry-header">
+                        <h3 class="journal-entry-title">Solving the Taxonomy Problem with Reverse-RAG</h3>
+                        <span class="journal-entry-date">March 16, 2026</span>
+                    </div>
+                    <div class="journal-entry-body">
+<p>Today I want to talk about the core problem behind Texnomy, the multi-variable, multi-class product taxonomy system I have been working on.</p>
+
+<p>At Genuine Parts Company, we face a massive data organization challenge. We need to accurately classify over 2 million unique automotive products into the NAPA Retail Hierarchy (NRH). Standard classification models are not flexible enough to capture the complex relationships between various data points, such as the Part Preference Hierarchy (PPH), Part Classification Code (PCC), and the specific intent of domain experts.</p>
+
+<p>Without a highly accurate taxonomy system, it becomes incredibly difficult for customers to find the exact parts they need across millions of variations, directly impacting sales, search accuracy, and overall user experience.</p>
+
+<p><em>Check back tomorrow to see how I architected a solution using Reverse-RAG and Generative AI to solve this massive classification problem!</em></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Neelesh Reddypelli. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
