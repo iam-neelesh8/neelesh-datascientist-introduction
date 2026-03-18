@@ -90,6 +90,7 @@ ul {
     margin-bottom: 4rem;
     background: linear-gradient(to right, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     position: relative;
@@ -152,6 +153,31 @@ ul {
 .hamburger {
     display: none;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -184,6 +210,7 @@ ul {
     margin-bottom: 1rem;
     background: linear-gradient(to right, #fff, #cbd5e1);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -227,6 +254,7 @@ ul {
 :root.light-mode .name {
     background: linear-gradient(to right, var(--text-color), #475569);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -301,7 +329,7 @@ ul {
 .about-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     font-size: 1.1rem;
     color: var(--text-muted);
 }
@@ -501,6 +529,11 @@ ul {
     font-size: 1.2rem;
 }
 
+.contact-item span {
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
 /* Footer */
 footer {
     padding: 2rem 0;
@@ -620,13 +653,32 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Mobile menu to be implemented with JS if needed, simple hide for now */
+        display: none;
     }
     
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--nav-bg);
+        padding: 1.5rem;
+        border-bottom: 1px solid var(--card-border);
+        box-shadow: var(--glass-shadow);
+        text-align: center;
+        backdrop-filter: blur(10px);
+    }
+
     .hamburger {
         display: block;
-        color: var(--text-color);
-        font-size: 1.5rem;
+        z-index: 1001; /* Make sure it stays on top */
+    }
+
+    .contact-item {
+        font-size: 0.95rem;
+        padding: 0.8rem 1rem;
     }
 
     .hero-container {
